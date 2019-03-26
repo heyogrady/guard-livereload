@@ -508,7 +508,6 @@
 
        Reloader.prototype.reloadPage = function() {
          if (typeof Turbolinks === 'object') {
-           Turbolinks.enableTransitionCache();
            return Turbolinks.visit(this.window.document.location);
          } else {
            return this.window.document.location.reload();
